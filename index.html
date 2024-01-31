@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Facebok-Profile page</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 700px;
+
+        }
+        .photos{
+            height: 240px;
+            position: relative;
+        }
+        .photos .cover_photo{
+            height: 100%;
+            width: 100%;
+        }
+        .photos .profile_picture{
+            height: 180px;
+            width: 180px;
+            border-radius: 160px;
+            overflow: hidden;
+            background: #fff;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            border-style: double;
+
+        }
+        .profile_picture img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        .title{
+            margin-top: 55px;
+            padding: 0 15px;
+        }
+        .title h1{
+            font-size: 28px;
+            display: inline-block;
+        }
+        .buttons{
+            margin: 15px 0;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+        .btn{
+            padding: 10px 17px;
+            font-size: 17px;
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            background: #ddd;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.1s;
+        }
+        .btn3{
+            padding: 10px 13px;
+
+        }
+        .btn1{
+            background: #66e;
+            color: white;
+        }
+        .btn1:hover{
+            transform: scale(0.98);
+            background-color: #44b;
+            color: #eee;
+        }
+        .btn2:hover,
+        .btn3:hover{
+            transform: scale(0.98);
+            background: #bbb;
+
+        }
+        .about{
+            padding:0 15px;
+
+        }
+        .about ul{
+            margin-top: 20px;
+
+        }
+        ul li{
+            list-style: none;
+            display: flex;
+            font-size: 18px;
+            margin: 22px 0;
+
+        }
+        ul li i{
+            font-size: 20px;
+            margin-right: 15px;
+            color: #666;
+        }
+        ul li p span{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        ul li.hobby{
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        ul li.hobby span{
+            padding: 10px 15px;
+            background: #e1e1e7;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            white-space: nowrap;
+            font-weight: 500;
+            border-radius: 25px;
+        }
+        .friends{
+            padding: 0 15px;
+
+        }
+        .Friends .titlebox{
+            margin-top: 15px;
+
+        }
+        .titlebox h1{
+            margin-bottom: 3px;
+            text-transform: capitalize;
+        }
+        .titlebox p{
+            font-size: 20px;
+            color: #555;
+        }
+        .friends .friends_photo{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-gap: 20px 30px;
+
+        }
+        .friends_photo .photobox img{
+            height: 120px;
+            width: 110px;
+            border-radius: 10px;
+            object-fit: cover;
+            border-style: hidden;
+            
+
+        }
+        .photobox{
+            margin-right: 6.6px;
+            transition: all 0.5;
+        }
+        .photobox:hover{
+            transform: scale(1.07);
+
+        }
+        .photobox h3{
+            padding: 0 7px;
+            text-transform: capitalize;
+        }
+        .friends button{
+            width: 100%;
+            background: #ddd;
+            border: none;
+            outline: none;
+            padding: 10px 0;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all  0.1s;
+        }
+        .friends button:hover{
+            background: #bbb;
+            transform: scale(0.99);
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <section class="intro">
+
+        <div class="photos">
+            <img class="cover_photo" src="images/facebook_project.png" alt="">
+            <div class="profile_picture">
+                <img src="images/IMG_20240115_150730.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>Sumit Kumar</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn btn1">
+                <i class="fas fa-user-plus"></i>
+                Add friend
+            </button>
+
+            <button class="btn btn2">
+                <i class="fab fa-facebook-messenger"></i>
+                Message
+            </button>
+
+            <button class="btn btn3">
+                <i class="fa-solid fa-ellipsis"></i>
+                ...
+            </button>
+        </div>
+    </section>
+    <section class="About">
+        <hr>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <p>Lives in <span>Patna, Bihar, India</span></p>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-heart"></i>
+                <p>In a Relationship</p>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Intern at Prepinsta</p>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-ellipsis"></i>
+                <p><a href="indexes.html"><strong>...  About Info.</strong></a>.</p>
+            </li>
+
+            <li class="hobby">
+                <span>Coding</span>
+                <span>Cricket</span>
+                <span>Music</span>
+                <!-- <span>Gaming</span> -->
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section class="friends">
+        <div class="titlebox">
+            <h1>Friends</h1>
+            <p>69 Friends</p>
+        </div>
+
+        <div class="friends_photo">
+            <div class="photobox">
+                <img src="images/uwp4250814.jpeg" alt="">
+                <h3>Pradeep</h3>
+            </div>
+
+            <div class="photobox">
+                <img src="images/Gojo_1.jpg" alt="">
+                <h3>gojo</h3>
+            </div>
+
+            <div class="photobox">
+                <img src="images/uwp4250464.jpeg" alt="">
+                <h3>Zero two</h3>
+            </div>
+
+            <div class="photobox">
+                <img src="images/wp5627007-beautiful-anime-girls-wallpapers.png" alt="">
+                <h3>Raxxx</h3>
+            </div>
+
+            <div class="photobox">
+                <img src="images/wp5314058-anime-beautiful-girls-wallpapers.jpg" alt="">
+                <h3>unknown</h3>
+            </div>
+        </div>
+        <button>See all friends</button>
+    </section>
+</div>
+
+</body>
+</html>
